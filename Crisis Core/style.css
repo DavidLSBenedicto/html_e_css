@@ -1,0 +1,219 @@
+/* Configuração Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: brown;
+    font-size: 38px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: brown;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: blue;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;   
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 40px;
+}
+
+header .btn_jogos button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: lightgreen;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn_jogos button{
+    box-shadow: 0px 0px 8px rgba(144, 238, 144, 0.459);
+}
+
+section .topo_site{
+    padding: 40px 4%;
+}
+
+section .topo_site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo_site .txt_topo_site h1{
+    color: lightgreen;
+    font-size: 28px;
+    line-height: 50px;
+}
+
+.topo_site .txt_topo_site p{
+    color: #fff;
+    margin: 20px 0px;
+}
+
+section .txt_topo_site .btn_personagens button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: lightgreen;
+    border: 0;
+    border-radius: 30px;
+}
+
+section .txt_topo_site .btn_personagens button:hover{
+    box-shadow: 0px 0px 8px rgba(144, 238, 144, 0.459);
+    transform: 1.05px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.topo_site .img_topo_site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:20px;
+    }
+}
+
+/* Estilo Crisis Core*/
+section.crisis_core {
+    padding: 40px 4%;
+}
+
+section.crisis_core .flex{
+    gap: 60px;
+}
+
+.crisis_core .crisircorebox{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.crisis_core .crisircorebox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px lightgreen;
+}
+
+.crisis_core .crisircorebox i{
+    color: lightgreen;
+    font-size: 70px; 
+}
+
+.crisis_core .crisircorebox h3{
+    font-size: 28px; 
+}
+
+/* Estilo Sobre*/
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt_sobre{
+    color:  #fff;
+}
+
+.sobre .txt_sobre h2{
+    color: brown;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt_sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/*Estilo Rodapé*/
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 20px 10px rgba(90, 93, 97, 0.13);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line_footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid lightgreen;
+}
+
+footer .btn_social button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgreen;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+footer .line_footer p i{
+    color: lightgreen;
+    font-size: 22px;
+}
+
+footer .line_footer p a{
+    color: #fff;
+}
